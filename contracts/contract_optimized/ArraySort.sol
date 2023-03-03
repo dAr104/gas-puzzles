@@ -17,11 +17,11 @@ contract OptimizedArraySort {
                     data[j] = temp;
                 }
                 unchecked {
-                    j += 1;
+                    ++j;
                 }
             }
             unchecked {
-                i -= 1;
+                --i;
             }
         }
         return data;
